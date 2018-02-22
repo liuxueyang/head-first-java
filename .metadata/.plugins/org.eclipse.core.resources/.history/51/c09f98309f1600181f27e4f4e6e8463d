@@ -1,0 +1,32 @@
+import java.util.ArrayList;
+
+public class DotCom {
+	private ArrayList<String> locations;
+	private String comName;
+	
+	String checkYourself(String guess) throws NumberFormatException {
+		String result = "miss";
+		int index = locations.indexOf(guess);
+		
+		if (index >= 0) {
+			result = "hit";
+			locations.remove(index);
+		}
+		
+		if (locations.isEmpty()) {
+			result = "kill";
+		}
+
+		System.out.println("result = " + result);
+
+		return result;
+	}
+
+	void setLocations(ArrayList<String> x) {
+		locations = x;
+	}
+	
+	void setName(String name) {
+		comName = name;
+	}
+}

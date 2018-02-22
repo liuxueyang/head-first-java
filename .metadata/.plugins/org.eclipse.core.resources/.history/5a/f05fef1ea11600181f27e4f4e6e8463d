@@ -1,0 +1,14 @@
+import java.util.ArrayList;
+
+public class DotComBust {
+	ArrayList<DotCom> dotComs = new ArrayList<DotCom>();
+	
+	public static void main(String[] args) {
+		DotComBust dcb = new DotComBust();
+		
+		for (int i = 0; i < 3; ++i) {
+			dcb.dotComs.add(new DotCom());
+			dcb.dotComs.get(i).setComName("com" + i);
+		}
+	}
+}

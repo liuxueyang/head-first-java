@@ -1,0 +1,7 @@
+import java.util.ArrayList;
+
+public class DotComBust {
+	ArrayList<DotCom> dotComs = new ArrayList<DotCom>();
+	
+	dotComs.add(new DotCom());
+}
