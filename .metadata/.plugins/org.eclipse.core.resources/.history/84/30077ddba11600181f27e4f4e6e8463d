@@ -1,7 +1,0 @@
-import java.util.ArrayList;
-
-public class GameHelper {
-	public void setLocations(ArrayList<DotCom> dotComs) {
-		return;
-	}
-}
